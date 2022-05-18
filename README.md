@@ -21,3 +21,8 @@ Add default configuration environment in .env file:
 ```
 APP_CONFIG_ENV=prod # Values: 'local', 'mock', 'dev', 'stg', 'prod'
 ```
+
+Changing configuration environment with request header:
+```
+X-App-Config-Env: mock
+```
