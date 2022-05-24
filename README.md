@@ -19,10 +19,10 @@ $app->loadConfigurations($app, [
 
 Add default configuration environment in .env file:
 ```
-APP_CONFIG_ENV=prod # Values: 'local', 'mock', 'dev', 'stg', 'prod'
+APP_ENV=local # Values: 'local', 'dev', 'development', 'mock', 'test', 'stg', 'staging', 'prod', 'production'
 ```
 
 Changing configuration environment with request header:
 ```
-X-App-Config-Env: mock
+X-App-Env: mock
 ```
