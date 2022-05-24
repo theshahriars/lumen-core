@@ -215,6 +215,6 @@ class Application extends \Laravel\Lumen\Application
      */
     private function checkIfInProductionOrRestricted($env): bool
     {
-        return in_array($this->appEnv, $this->productionEnvs) || ($env == $this->productionEnvs) || in_array($env, $this->restrictedEnvs);
+        return in_array($this->appEnv, $this->productionEnvs) || in_array($env, $this->productionEnvs) || in_array($env, $this->restrictedEnvs);
     }
 }
